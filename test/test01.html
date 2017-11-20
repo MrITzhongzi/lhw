@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            position: relative;
+            top: 200px;
+            left: 200px;
+            transform: translate(0,0);
+        }
+        .box.active {
+            animation: func 5s;
+        }
+
+        @keyframes func{
+            0% {
+                transform: translate(0,0);
+            }
+            100% {
+                transform: translate(100px,0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box active">
+
+    </div>
+    <button>点击</button>
+    <script>
+    
+        var btnEle = document.querySelector('button')
+        var divEle = document.querySelector('.box')
+       
+        btnEle.onclick = function(){
+            divEle.className = divEle.className + ' active'
+        }
+    </script>
+</body>
+
+</html>

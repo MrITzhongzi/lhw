@@ -1,0 +1,111 @@
+.head-img {
+    background: url('../images/head.png') center center / cover no-repeat;
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 10vh;
+    left: 50%;
+    margin-left: -45px;
+    transform: rotate(90deg);
+    border-radius: 50%;
+    transform: translate(0,-40vh)  rotate(10000deg);
+    
+}
+
+.onePage.swiper-slide-active .head-img {
+    transition: transform 1s linear;
+    transform: rotate(90deg) translate(0,0);
+}
+
+.row {
+    color: rgb(243, 241, 241);
+    text-align: center;
+    font-size: 16px;
+    margin: 10px auto;
+    overflow: hidden;
+    padding-left: 28vw;
+    transform: translate(-40vw,0);
+}
+
+.row span:nth-child(1){
+    margin-right: 10px;
+    float: left;
+}
+
+.row span:nth-child(2) {
+    float: left;
+}
+.onePage.swiper-slide-active .row {
+    animation: onePage 2s forwards;
+}
+
+.onePage.swiper-slide-active .row:nth-child(2) span:nth-child(1) {
+    transform: translate(0,0);
+    animation: onePage-sub1 0.3s 2s forwards;
+}
+.onePage.swiper-slide-active .row:nth-child(2) span:nth-child(2) {
+    transform: translate(0,0);
+    animation: onePage-sub2 0.3s 2s forwards;
+}
+.onePage.swiper-slide-active .row:nth-child(3) span:nth-child(1) {
+    transform: translate(0,0);
+    animation: onePage-sub1 0.3s 2.3s forwards;
+}
+.onePage.swiper-slide-active .row:nth-child(3) span:nth-child(2) {
+    transform: translate(0,0);
+    animation: onePage-sub2 0.3s 2.3s forwards;
+}
+.onePage.swiper-slide-active .row:nth-child(4) span:nth-child(1) {
+    transform: translate(0,0);
+    animation: onePage-sub1 0.3s 2.6s forwards;
+}
+.onePage.swiper-slide-active .row:nth-child(4) span:nth-child(2) {
+    transform: translate(0,0);
+    animation: onePage-sub2 0.3s 2.6s forwards;
+}
+.onePage.swiper-slide-active .row:nth-child(5) span:nth-child(1) {
+    transform: translate(0,0);
+    animation: onePage-sub1 0.3s 2.9s forwards;
+}
+.onePage.swiper-slide-active .row:nth-child(5) span:nth-child(2) {
+    transform: translate(0,0);
+    animation: onePage-sub2 0.3s 2.9s forwards;
+}
+/* 第一个页面动画 */
+
+@keyframes onePage {
+    0% {
+        transform: translate(-40vw,0);
+    }
+
+    100% {
+        transform: translate(0,0);
+    }
+}
+
+@keyframes onePage-sub1 {
+    0% {
+        transform: translate(0,0);
+    }
+
+    50% {
+        transform: translate(-3vw,0);
+    }
+
+    100% {
+        transform: translate(0,0);
+    }
+}
+@keyframes onePage-sub2 {
+    0% {
+        transform: translate(0,0);
+    }
+
+    50% {
+        transform: translate(3vw,0);
+    }
+
+    100% {
+        transform: translate(0,0);
+    }
+}
