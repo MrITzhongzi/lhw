@@ -1,3 +1,6 @@
+.onePage {
+    background-color: #514a4e;
+}
 .head-img {
     background: url('../images/head.png') center center / cover no-repeat;
     width: 90px;
