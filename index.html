@@ -52,18 +52,84 @@
                     <span>前端工程师</span>
                 </div>
                 <div class="row">
-                        <span>联系电话：</span>
-                        <span>17862806857</span>
+                    <span>联系电话：</span>
+                    <span>17862806857</span>
                 </div>
                 <div class="row">
-                        <span >邮箱：</span>
-                        <span>17862806857@163.com</span>
+                    <span>邮箱：</span>
+                    <span>17862806857@163.com</span>
                 </div>
             </div>
             <div class="swiper-slide twoPage">
-
+                <h4>专业技能</h4>
+                <div class="left">
+                    <p>
+                        熟练使用HTML+CSS/Less网页布局，能够快速精确还原设计图，熟悉网页兼容性并对不同浏览器做兼容性处理。
+                    </p>
+                </div>
+                <div class="right">
+                    <p>
+                        熟练使用jQuery和JavaScript，能写原生JS代码，具有面向对象的编程思想，熟练掌握JavaScript中的原型对象、原型链、作用域链、闭包等。
+                    </p>
+                </div>
+                <div class="left">
+                    <p>
+                        熟练运用HTML5和CSS3构建效果炫酷的移动端浏览器页面，掌握zepto.js，能够使用 canvas 可以完成简单的绘图，实现数据的可视化。
+                    </p>
+                </div>
+                <div class="right">
+                    <p>
+                        熟练使用移动端流式布局和响应式布局原理，掌握使用bootstrap等UI框架，熟练使用各种组件，进行响应式页面的开发。
+                    </p>
+                </div>
+                <div class="left">
+                    <p>
+                            熟练使用artTemplate中前端主流模板引擎及其原理，可以提高项目开发效率。
+                    </p>
+                </div>
+                <div class="right">
+                    <p>
+                            熟练使用Git等版本管理控制工具进行高效的多人协作项目开发,会使用前端自动化工具Gulp、包管理工具：npm。
+                    </p>
+                </div>
+                <div class="line">
+                </div>
             </div>
-            <div class="swiper-slide" style="background: rgb(204, 41, 155);">Slide 3</div>
+            <div class="swiper-slide threePage" >
+                    <h4>专业技能</h4>
+                    <div class="left">
+                        <p>
+                            熟练使用HTML+CSS/Less网页布局，能够快速精确还原设计图，熟悉网页兼容性并对不同浏览器做兼容性处理。
+                        </p>
+                    </div>
+                    <div class="right">
+                        <p>
+                            熟练使用jQuery和JavaScript，能写原生JS代码，具有面向对象的编程思想，熟练掌握JavaScript中的原型对象、原型链、作用域链、闭包等。
+                        </p>
+                    </div>
+                    <div class="left">
+                        <p>
+                            熟练运用HTML5和CSS3构建效果炫酷的移动端浏览器页面，掌握zepto.js，能够使用 canvas 可以完成简单的绘图，实现数据的可视化。
+                        </p>
+                    </div>
+                    <div class="right">
+                        <p>
+                            熟练使用移动端流式布局和响应式布局原理，掌握使用bootstrap等UI框架，熟练使用各种组件，进行响应式页面的开发。
+                        </p>
+                    </div>
+                    <div class="left">
+                        <p>
+                                熟练使用artTemplate中前端主流模板引擎及其原理，可以提高项目开发效率。
+                        </p>
+                    </div>
+                    <div class="right">
+                        <p>
+                                熟练使用Git等版本管理控制工具进行高效的多人协作项目开发,会使用前端自动化工具Gulp、包管理工具：npm。
+                        </p>
+                    </div>
+                    <div class="line">
+                    </div>
+            </div>
         </div>
         <!-- 如果需要分页器 -->
         <div class="swiper-pagination"></div>
@@ -101,9 +167,9 @@
                 el: '.swiper-scrollbar',
             },
             on: {
-                slideChangeTransitionEnd: function(){
+                slideChangeTransitionEnd: function () {
                     //alert(this.activeIndex);//切换结束时，告诉我现在是第几个slide
-
+                    sliderEnd()
                 }
             }
         })

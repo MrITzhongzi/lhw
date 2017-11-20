@@ -1,5 +1,7 @@
 .onePage {
     background-color: #514a4e;
+    background: url('../images/bg1.png') center center / cover no-repeat;
+    padding-top: 51vh;
 }
 .head-img {
     background: url('../images/head.png') center center / cover no-repeat;

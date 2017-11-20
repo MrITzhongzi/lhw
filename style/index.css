@@ -1,10 +1,8 @@
 /* 第一个页面动画 */
 @import './onePage.css';
+/* 第二个页面 */
+@import './twoPage.css';
 
-.swiper-wrapper > div:nth-child(2){
-    background: url('../images/bg1.png') center center / cover no-repeat;
-    padding-top: 51vh;
-}
 
 .swiper-slide {
     position: relative;

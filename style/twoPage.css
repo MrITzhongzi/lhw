@@ -1,0 +1,109 @@
+.twoPage {
+    background-color: #6b5652;
+    padding: 10px 20px 0;
+    position: relative;
+}
+
+.twoPage .line {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 3px;
+    height: 105vh;
+    background-color: red;
+    transform: translateY(-100vh);
+}
+
+.twoPage .line::after {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: wheat;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: -10px;
+}
+
+.twoPage h4 {
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+.twoPage .left {
+    width: 40%;
+    height: 0vh;
+    border-top: 1px solid red;
+    float: left;
+    position: relative;
+    margin-top: 5px;
+    overflow: hidden;
+    font-size: 12px;
+}
+
+.twoPage .right {
+    width: 40%;
+    height: 0vh;
+    border-top: 1px solid red;
+    float: right;
+    position: relative;
+    margin-top: 5px;
+    overflow: hidden;
+    font-size: 12px;
+}
+.twoPage .left::after,
+.twoPage .right::after {
+    content: "";
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    width: 20px;
+    height: 20px;
+    background: wheat;
+    border-radius: 50%;
+
+}
+
+.twoPage .right::after {
+    left: -10px;
+}
+
+.twoPage.swiper-slide-active .line {
+    animation: line 2s forwards;
+}
+.twoPage .left.active,
+.twoPage .right.active {
+    animation: skill 0.3s forwards;   
+    background-color: wheat; 
+}
+
+.twoPage .left.active::after,
+.twoPage .right.active::after {
+    background: white;
+}
+
+@keyframes line{
+    0% {
+        transform: translateY(-100vh);
+    }
+
+    100% {
+        transform: translateY(100vh);
+    }
+}
+
+@keyframes skill {
+    0% {
+        height: 0;
+
+    }
+
+    100% {
+        height: 30vh;
+    }
+}
