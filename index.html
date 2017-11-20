@@ -25,6 +25,15 @@
         body {
             overflow: hidden;
         }
+
+        .twoPage .left,
+        .twoPage .right,
+        .threePage .left,
+        .threePage .right {
+           padding-left: 10px;
+           padding-right: 10px;
+           border-radius: 10px;
+        }
     </style>
     <title>李洪伟个人介绍</title>
 </head>
@@ -99,32 +108,29 @@
                     <h4>专业技能</h4>
                     <div class="left">
                         <p>
-                            熟练使用HTML+CSS/Less网页布局，能够快速精确还原设计图，熟悉网页兼容性并对不同浏览器做兼容性处理。
+                            熟练使用Ajax做前后台数据交互，对Ajax跨域问题有较好的理解，熟练使用JSONP解决浏览器端常见的跨域请求问题，熟悉JSON数据格式。
                         </p>
                     </div>
                     <div class="right">
                         <p>
-                            熟练使用jQuery和JavaScript，能写原生JS代码，具有面向对象的编程思想，熟练掌握JavaScript中的原型对象、原型链、作用域链、闭包等。
-                        </p>
+                            熟练使用JS模块化开发方式，熟悉 MVVM和MVC设计模式，并熟练使用各种ui框架比如：easyUI提升用户体验                        </p>
                     </div>
                     <div class="left">
                         <p>
-                            熟练运用HTML5和CSS3构建效果炫酷的移动端浏览器页面，掌握zepto.js，能够使用 canvas 可以完成简单的绘图，实现数据的可视化。
-                        </p>
+                            熟悉vue，react、Angular.js等最新流行的框架，可以进行SPA开发并使用swiper，lazy-loader等工具提升用户体验                        </p>
                     </div>
                     <div class="right">
                         <p>
-                            熟练使用移动端流式布局和响应式布局原理，掌握使用bootstrap等UI框架，熟练使用各种组件，进行响应式页面的开发。
-                        </p>
+                            熟悉nodejs，可以搭建后台服务器，处理数据。对于前后端交互有深入的理解，有能力满足用户各种需求，并提升用户体验                        </p>
                     </div>
                     <div class="left">
                         <p>
-                                熟练使用artTemplate中前端主流模板引擎及其原理，可以提高项目开发效率。
+                            可以 使用echarts是数据可视化更加美观和直接
                         </p>
                     </div>
                     <div class="right">
                         <p>
-                                熟练使用Git等版本管理控制工具进行高效的多人协作项目开发,会使用前端自动化工具Gulp、包管理工具：npm。
+                            对各种新技术正在不断的学习，积累中…………
                         </p>
                     </div>
                     <div class="line">
@@ -169,7 +175,7 @@
             on: {
                 slideChangeTransitionEnd: function () {
                     //alert(this.activeIndex);//切换结束时，告诉我现在是第几个slide
-                    sliderEnd()
+                    sliderEnd(this.activeIndex)
                 }
             }
         })
