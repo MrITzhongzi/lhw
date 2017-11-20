@@ -12,12 +12,22 @@
 }
 
 .swiper-slide::after {
-    width: 20px;
-    height: 20px;
+    content: '';
+    width: 15px;
+    height: 15px;
     display: block;
-    background-color: rgb(10, 5, 5);
     position: absolute;
-    top: 0;
-    left: 0;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -10px;
+    border-right: 4px solid #fff;
+    border-bottom: 4px solid #fff;
+    transform: rotate(45deg);
+
+}
+
+.swiper-slide.jiantou-animate::after{
+    display: none;
+    transition: display 0.5s;
 }
 

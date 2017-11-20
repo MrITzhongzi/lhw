@@ -23,7 +23,7 @@
     font-size: 16px;
     margin: 10px auto;
     overflow: hidden;
-    padding-left: 28vw;
+    padding-left: 24vw;
     transform: translate(-40vw,0);
 }
 
@@ -70,6 +70,22 @@
 .onePage.swiper-slide-active .row:nth-child(5) span:nth-child(2) {
     transform: translate(0,0);
     animation: onePage-sub2 0.3s 2.9s forwards;
+}
+.onePage.swiper-slide-active .row:nth-child(6) span:nth-child(1) {
+    transform: translate(0,0);
+    animation: onePage-sub1 0.3s 3.2s forwards;
+}
+.onePage.swiper-slide-active .row:nth-child(6) span:nth-child(2) {
+    transform: translate(0,0);
+    animation: onePage-sub2 0.3s 3.2s forwards;
+}
+.onePage.swiper-slide-active .row:nth-child(7) span:nth-child(1) {
+    transform: translate(0,0);
+    animation: onePage-sub1 0.3s 3.5s forwards;
+}
+.onePage.swiper-slide-active .row:nth-child(7) span:nth-child(2) {
+    transform: translate(0,0);
+    animation: onePage-sub2 0.3s 3.5s forwards;
 }
 /* 第一个页面动画 */
 
