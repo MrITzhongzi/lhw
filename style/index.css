@@ -1,0 +1,37 @@
+.swiper-wrapper > div:nth-child(2){
+    background: url('../images/bg1.png') center center / cover no-repeat;
+    padding-top: 51vh;
+}
+.swiper-slide {
+    position: relative;
+}
+.head-img {
+    background: url('../images/head.png') center center / cover no-repeat;
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 10vh;
+    left: 50%;
+    margin-left: -45px;
+    transform: rotate(90deg);
+    border-radius: 50%;
+}
+.row {
+    color: rgb(243, 241, 241);
+    text-align: center;
+    font-size: 16px;
+    margin: 10px auto;
+    overflow: hidden;
+    padding-left: 28vw;
+}
+
+.row span:nth-child(1){
+    margin-right: 10px;
+    float: left;
+}
+
+.row span:nth-child(2) {
+    float: left;
+}
+
+/* 第一个页面动画 */
