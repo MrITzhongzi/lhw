@@ -3142,7 +3142,7 @@ var loadImage = function (imageEl, src, srcset, sizes, checkForComplete, callbac
 
 var preloadImages = function () {
   var swiper = this;
-  swiper.imagesToLoad = swiper.$el.find('img');
+  swiper.imagesToLoad = swiper.$el.find('images');
   function onReady() {
     if (typeof swiper === 'undefined' || swiper === null || !swiper || swiper.destroyed) { return; }
     if (swiper.imagesLoaded !== undefined) { swiper.imagesLoaded += 1; }
@@ -5282,7 +5282,7 @@ var Zoom = {
     if (!gesture.$slideEl || !gesture.$slideEl.length) {
       gesture.$slideEl = $$1(this);
       if (gesture.$slideEl.length === 0) { gesture.$slideEl = swiper.slides.eq(swiper.activeIndex); }
-      gesture.$imageEl = gesture.$slideEl.find('img, svg, canvas');
+      gesture.$imageEl = gesture.$slideEl.find('images, svg, canvas');
       gesture.$imageWrapEl = gesture.$imageEl.parent(("." + (params.containerClass)));
       gesture.maxRatio = gesture.$imageWrapEl.attr('data-swiper-zoom') || params.maxRatio;
       if (gesture.$imageWrapEl.length === 0) {
@@ -5523,7 +5523,7 @@ var Zoom = {
 
     if (!gesture.$slideEl) {
       gesture.$slideEl = swiper.clickedSlide ? $$1(swiper.clickedSlide) : swiper.slides.eq(swiper.activeIndex);
-      gesture.$imageEl = gesture.$slideEl.find('img, svg, canvas');
+      gesture.$imageEl = gesture.$slideEl.find('images, svg, canvas');
       gesture.$imageWrapEl = gesture.$imageEl.parent(("." + (params.containerClass)));
     }
     if (!gesture.$imageEl || gesture.$imageEl.length === 0) { return; }
@@ -5609,7 +5609,7 @@ var Zoom = {
 
     if (!gesture.$slideEl) {
       gesture.$slideEl = swiper.clickedSlide ? $$1(swiper.clickedSlide) : swiper.slides.eq(swiper.activeIndex);
-      gesture.$imageEl = gesture.$slideEl.find('img, svg, canvas');
+      gesture.$imageEl = gesture.$slideEl.find('images, svg, canvas');
       gesture.$imageWrapEl = gesture.$imageEl.parent(("." + (params.containerClass)));
     }
     if (!gesture.$imageEl || gesture.$imageEl.length === 0) { return; }

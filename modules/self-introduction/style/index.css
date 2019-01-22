@@ -1,9 +1,9 @@
 /* 第一个页面动画 */
-@import './onePage.css';
+@import 'onePage.css';
 /* 第二个页面 */
-@import './twoPage.css';
+@import 'twoPage.css';
 /* 第三个页面 */
-@import './threePage.css';
+@import 'threePage.css';
 
 
 .swiper-slide {
